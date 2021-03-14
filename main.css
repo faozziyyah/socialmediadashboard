@@ -1,0 +1,246 @@
+
+header, main{
+  display: flex;
+  flex-direction: column;
+ /* justify-content: center;
+  align-items: center; */
+}
+.top{
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(225, 100%, 98%);
+}
+.summary, .content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+/*  flex-wrap: wrap;*/
+}
+.introduction{
+  padding-left: 2em;
+  text-align: left;
+  font-size: 14px;
+}
+.introp1{
+  color: hsl(228, 12%, 44%);
+  font-weight: 700;
+}
+.togglebutton{
+  background-color: hsl(230, 22%, 74%);
+  width: 15%;
+  height: 20px;
+  border-radius: 50px;
+}
+.inner{
+  background-color: hsl(0, 0%, 100%);
+  margin-left: 23px;
+  margin-top: 3px;
+  width: 35%;
+  height: 15px;
+  border-radius: 50%;
+}
+.changemode{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2em;
+  border-top: 1px solid hsl(228, 12%, 44%);
+}
+.background{
+   width: 100%;
+  margin: 1em auto;
+  border-radius: 5px;
+}
+#facebook{
+  background-color: hsl(208, 92%, 53%);
+}
+#twitter{
+  background-color: hsl(203, 89%, 53%);
+}
+#instagram{
+  background-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+#youtube{
+  background-color: hsl(348, 97%, 39%);
+}
+.action{
+  display: block;
+  text-align: center;
+  border-radius: 5px;
+  background-color: hsl(227, 47%, 96%);
+  margin-bottom: -17px;
+  margin-top: 2px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.action p{
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+.action h1{
+  font-size: 45px;
+  margin-top: 10px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+.name{
+  color: hsl(230, 17%, 14%);
+  font-size: 12px;
+  font-weight: 700;
+}
+.fill{
+  color: hsl(228, 12%, 44%);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: -25px;
+  font-size: 12px;
+}
+.text{
+  color: hsl(163, 72%, 41%);
+}
+#today1{
+  color: hsl(163, 72%, 41%);
+}
+#today2{
+  color: hsl(356, 69%, 56%);
+}
+main{
+  margin-bottom: 2em;
+}
+.wrapper{
+  width: 100%;
+  display: block;
+  text-align: center;
+  border-radius: 5px;
+  background-color: hsl(227, 47%, 96%);
+  margin-top: 1em;
+  /*padding-top: 1em;
+  padding-bottom: 1em;*/
+}
+.first, .second{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+.first p{
+  color: hsl(230, 17%, 14%);
+  font-size: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+.green{
+  color: hsl(163, 72%, 41%);
+}
+.red{
+  color: hsl(356, 69%, 56%);
+}
+  
+  /*tablet view up to larger devices*/
+@media screen and (min-width: 768px){
+  .container{
+    margin-top: 3em;
+    height: 100%;
+  }
+  .top, .summary, .content{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .summary, .content{
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .background, .wrapper{
+    margin-left: 1.5em;
+  }
+  .changemode{
+    border: none;
+    margin-right: 4em;
+  }
+  .changemode p{
+    margin-right: 2em;
+    display: inline-flex;
+  }
+  .togglebutton{
+    width: 45%;
+  }
+  .inner{
+    width: 35%;
+    margin-left: 3px;
+  }
+  .upper{
+    margin-left: 1em;
+  }
+}
+
+
+/*hover states for light mode*/
+.action:hover{
+  background-color: hsl(230, 22%, 74%);
+}
+.wrapper:hover{
+  background-color: hsl(230, 22%, 74%);
+}
+
+/*hover states for dark mode*/
+.action:hover{
+  background-color: hsl(228, 12%, 44%);
+}
+.wrapper:hover{
+  background-color: hsl(228, 12%, 44%);
+}
+
+
+/*styles for dark mode*/
+.bodydark{
+  background-color: hsl(230, 17%, 14%);
+}
+.topdark{
+  background-color: hsl(232, 19%, 15%);
+}
+.changemodedark{
+  border-top: 1px solid hsl(228, 34%, 66%);
+}
+.introdark{
+  color: white;
+}
+.introp1dark{
+  color: hsl(228, 34%, 66%);
+  font-weight: 700;
+}
+.actiondark{
+  background-color: hsl(228, 28%, 20%);
+}
+.wrapperdark{
+  background-color: hsl(228, 28%, 20%);
+}
+.textdark{
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+.namedark{
+  color: hsl(228, 34%, 66%);
+}
+.filldark{
+  color: hsl(228, 34%, 66%);
+}
+.headingdark{
+  color: hsl(0, 0%, 100%);
+}
+.upperdark{
+  color: hsl(0, 0%, 100%);
+}
+.pagedark{
+  color: hsl(228, 34%, 66%);
+}
+.togglebuttondark{
+  background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+.innerdark{
+  background-color: hsl(232, 19%, 15%);
+  margin-left: 3px;
+}
