@@ -26,7 +26,7 @@ Users should be able to:
 
 ![](images/screenshot.jpg)
 
-![](images/screenshot 1.jpg)
+![](images/screenshot1.jpg)
 
 ### Links
 
